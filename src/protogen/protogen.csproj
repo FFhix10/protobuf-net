@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <VersionPrefix>$(ProtoGenVersion)</VersionPrefix>
     <OutputType>Exe</OutputType>
@@ -19,6 +19,6 @@
     <ProjectReference Include="../protobuf-net.Reflection/protobuf-net.Reflection.csproj" />
     <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
     <PackageReference Include="protobuf-net.Grpc.Reflection" Version="1.0.123" Condition="'$(GrpcTools)'=='true'" />
-    <PackageReference Include="Grpc.Net.Client" Version="2.33.1" Condition="'$(GrpcTools)'=='true'"/>
+    <PackageReference Include="Grpc.Net.Client" Version="2.52.0" Condition="'$(GrpcTools)'=='true'"/>
   </ItemGroup>
 </Project>
